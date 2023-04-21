@@ -1,0 +1,141 @@
+body{
+    font-family: 'Pretendard';
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+
+.text-white{
+    color:white
+}
+.text-center{
+    text-align: center;
+}
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+h1{ font-size: 55px;}
+.hd{
+    border: 2px solid pink;
+    border-radius: 50px;
+    padding: 1em 2em;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    left: 1rem;
+    background-color: rgba(227, 226, 227, 0.8);
+}
+#gnb li{
+    padding-left: 2em;
+    font-weight: 500;
+}
+
+#gnb  li  a{
+    transition: 0.5s;
+}
+
+#gnb li:after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: pink;
+    width: 0;
+    transition: 0.5s;
+}
+#gnb li:nth-child(2):after{
+    background-color: magenta;
+}
+#gnb li:nth-child(3):after{
+    background-color: blue;
+}
+
+#gnb li:nth-child(1):hover a{
+    color: pink;
+}
+
+#gnb li:nth-child(2):hover a{
+    color: magenta;
+}
+
+#gnb li:nth-child(3):hover a{
+    color: blue;
+}
+
+#gnb  li:hover:after{
+    width: 100%;
+}
+
+
+.child1, .child2, .child3{
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(45, 44, 44);
+}
+
+.child1{
+    background-color: moccasin;  
+}
+.child2{
+    background-color: pink;  
+}
+.child3{
+    background-color: moccasin;  
+}
+
+.ft{
+    padding: 2em;
+}
+
+
+.sns{
+   justify-content: center;
+}
+
+.sns li{ padding: 8px; border-radius: 20px; margin: 0 10px;}
+
+.sns li:first-child{
+    background-color: plum;
+}
+.sns li:nth-child(2){
+    background-color: rgb(76, 148, 225); 
+}
+.sns li:last-child{
+    background-color: rgb(245, 83, 83);    
+}
+
+/*svg 다루기*/
+.hd h1 svg{
+    height: 2rem;
+    display: block;
+}
+.hd h1 a{
+    display: block;
+}
+.hd h1 a:hover svg path:nth-child(1){
+    fill: gray;
+}
+.hd h1 a:hover svg path:nth-child(2){
+    fill: pink;
+}
+.hd h1 a:hover svg path:nth-child(3){
+    fill: gray;
+}
+.hd h1 a:hover svg path:nth-child(4){
+    fill: pink;
+}
+.hd h1 a:hover svg path:nth-child(5){
+    fill: gray;
+}
+.hd h1 a:hover svg path:nth-child(6){
+    fill: pink;
+}
